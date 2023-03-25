@@ -28,7 +28,7 @@ Simpan datanya ke dalam session storage
 <br>
 ![image](https://user-images.githubusercontent.com/120205407/227738991-ca5ceca9-48e1-4587-87c6-f8585a95c208.png)
 
-Tampilkan data yang diinput sebelumnya dari session storge
+Tampilkan data yang diinput sebelumnya dari session storage
 <br>
 ![image](https://user-images.githubusercontent.com/120205407/227739052-54a19224-a431-45e5-95e1-e82be184010f.png)
 
