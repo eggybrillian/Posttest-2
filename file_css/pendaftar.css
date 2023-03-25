@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    right: 0;
+}
+
+body{
+    background-image: url("../file_gambar/emyu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+h1{
+    color: #ddd;
+    margin-top: 100PX;
+    text-align: center;
+}
+
+nav{
+    width: 100%;
+    background-color: black;
+    color: rgb(15, 15, 14);
+    padding: 20px 0 20px 30px;
+    font-size: 20px;
+    position: absolute;
+  } 
+
+nav a{
+    padding: 10px 30px 10px 30px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: ease-in-out ;
+}
+
+
+
+section{
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    background-color: #d3d3d3;
+    /* border: 2px solid red; */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+  }
+  
+  th,
+  td {
+    text-align: left;
+    padding: 8px;
+    /* border-bottom: 1px solid #ddd; */
+    border: 2px solid rgb(0, 0, 0);
+  }
+  
+  th {
+    background-color: #e60000;
+  }
+
+
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position:absolute;
+}
+
+footer p{
+    margin: 0;
+    font-size: 14px;
+
+}

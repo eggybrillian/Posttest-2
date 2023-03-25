@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emyu Registrar</title>
+	<link rel="stylesheet" href="../file_css/pendaftar.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html">HOME</a>
+        <a href="artikel.html">NEWS</a>
+        <a href="daftar.html">REGISTER</a>
+        <a href="about.html">ABOUT</a>
+        <a href="pendaftar.html">REGISTRAR</a>
+        <a id="logout" href="#">LOGOUT</a>
+        <script src="../file_js/logout.js"></script>
+    </nav>
+	<br>
+
+	<h1>DATA REGISTRAR</h1>
+	<section>
+		<table>
+			<thead>
+				<tr>
+					<th>Full Name</th>
+					<th>Email</th>
+					<th>Country</th>
+					<th>Address</th>
+					<th>Gender</th>
+					<th>Position</th>
+					<th>Motto</th>
+					<th>Picture</th>
+				</tr>
+			</thead>
+			<tbody id="data-body">
+				
+			</tbody>
+		</table>
+	</section>
+
+	<script>
+		var data = JSON.parse(sessionStorage.getItem('data')) || [];
+
+		var dataBody = document.getElementById('data-body');
+		for (var i = 0; i < data.length; i++) {
+			var tr = document.createElement('tr');
+			tr.innerHTML = '<td>' + data[i]['Full Name'] + '</td>' +
+						'<td>' + data[i]['Email'] + '</td>' +
+						'<td>' + data[i]['Country'] + '</td>' +
+						'<td>' + data[i]['Address'] + '</td>' +
+						'<td>' + data[i]['Gender'] + '</td>' +
+						'<td>' + data[i]['Position'].join(', ') + '</td>'+
+						'<td>' + data[i]['Motto'] + '</td>'	+
+						'<td><img src="' + data[i]['Picture'] + '" width="100" height="100" id="img-' + i + '"></td>';
+			dataBody.appendChild(tr);
+		}
+	</script>
+	    <footer>
+			<p>&copy; 2023 Emyu. All Rights Reserved <br>
+			Eggy Brillian</p>
+		</footer>
+</body>
+</html>

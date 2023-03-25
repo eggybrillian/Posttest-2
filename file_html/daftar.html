@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../file_css/daftar.css">
+    <title>Emyu Register</title>
+</head>
+<body>
+
+    <nav>
+        <a href="home.html">HOME</a>
+        <a href="artikel.html">NEWS</a>
+        <a href="daftar.html">REGISTER</a>
+        <a href="about.html">ABOUT</a>
+        <a href="pendaftar.html">REGISTRAR</a>
+        <a id="logout" href="#">LOGOUT</a>
+        <script src="../file_js/logout.js"></script>
+    </nav>  
+    
+    <div class="judul">
+    <p>Want to be a part of this dream team? <br>Regist Now!!!</p>
+    </div>
+
+    <h1>REGISTER</h1>
+    <section>
+        <div class="formm">
+            <form id="form">
+            <label for="name">Full Name :</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+
+            <label for="country">Country :</label>
+            <select id="country" name="country" placeholder="Choose Your Country" required>
+                <option value="" disabled selected >Choose Your Country</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Thailand">Thailand</option>
+            </select>
+
+            <label for="address">Address :</label>
+            <input type="text" id="address" name="address" placeholder="Your address" required>
+            <br><br>
+
+            <label>Gender : </label>
+            <label for="Male">
+            <input type="radio" id="male" name="gender" value="Male"> Male
+            </label> 
+            <label for="Female">
+            <input type="radio" id="female" name="gender" value="Female"> Female
+            </label>
+            <br>
+
+            <label for="">Position :</label>
+            <input name="position" id ="striker" type="checkbox" value="Striker">Striker   
+            <input name="position" id="midfielder" type="checkbox" value="Midfielder">Midfielder 
+            <input name="position" id="defender" type="checkbox" value="Defender">Defender
+            <input name="position" id="goalkeeper" type="checkbox" value="Goalkeeper">Goalkeeper 
+            <br><br>
+
+            <label for="gambar">Your Picture</label>
+            <input name="gambar" id="gambar" type="file"><br>
+            <!-- <img id="preview" src="" alt="" width="200"> -->
+            <br>
+
+            <label for="motto">Have some motto?:</label>
+            <textarea rows="7" cols="40" id="motto" name="motto"></textarea><br>
+            <br>
+
+            <button type="submit" id="send">Send</button>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Emyu. All Rights Reserved 
+            <br>
+        Eggy Brillian</p>
+    </footer>
+
+</body>
+<script src="../file_js/daftar.js"></script>
+</html>
